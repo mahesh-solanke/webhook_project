@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <style>
+        pre {
+            display: block;
+            padding: 9.5px;
+            margin: 0 0 10px;
+            font-size: 13px;
+            line-height: 1.428571429;
+            color: #333333;
+            word-break: break-all;
+            word-wrap: break-word;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            overflow: auto;
+        }
+        pre.wordwrapDisable
+        {
+            overflow-x: auto;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+<!--<script>-->
+<!--    var list1 = []-->
+<!--    function format_json(data){-->
+<!--    //var data = document.getElementById("jsondata").innerHTML-->
+<!--    console.log(JSON.stringify(data))-->
+<!--    list1.push(JSON.stringify(data))-->
+<!--    document.getElementById("jsondata").innerHTML = list1-->
+<!--    }-->
+<!--</script>-->
+    <title>Document</title>
+<!--    <script>-->
+<!--        let data = -->
+<!--        function formatjson(data){-->
+<!--            console.log(JSON.stringify(data, undefined, 2))-->
+
+<!--        }-->
+<!--    </script>-->
+</head>
+<body>
+<p>{{datetime.datetime.now}}</p>
+<div>{{ username }}</div>
+
+<div>
+{%for res in responses%}
+<pre>
+    {{res}}
+</pre>
+{%endfor%}
+</div>
+</body>
+</html>
